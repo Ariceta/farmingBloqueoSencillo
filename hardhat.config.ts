@@ -73,7 +73,7 @@ const config: HardhatUserConfig = {
     },
     localhost: {
       url: "http://127.0.0.1:8545",
-      chainId: 1337,
+      chainId: 31337,
     },
     ropsten: {
       url: `https://ropsten.infura.io/v3/${process.env.INFURA_PROJECT_KEY}`,
@@ -111,7 +111,7 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      
+      bscTestnet: process.env.BSCSCAN_API_KEY
     },
   },
   docgen: {

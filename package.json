@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OuterRingMMO/outerring-governance-contracts.git"
+    "url": "git+https://github.com/Ariceta/first-token.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OuterRingMMO/outerring-governance-contracts/issues"
+    "url": "https://github.com/github.com/Ariceta/first-token/issues"
   },
-  "homepage": "https://github.com/OuterRingMMO/outerring-governance-contracts#readme",
+  "homepage": "https://github.com/Ariceta/first-token#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
@@ -53,5 +53,8 @@
     "ts-node": "^10.7.0",
     "typechain": "^5.2.0",
     "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.0.2"
   }
 }
