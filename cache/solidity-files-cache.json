@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/contracts/FirstToken.sol": {
-      "lastModificationDate": 1654087309263,
-      "contentHash": "faead52138879cd77b323893fbf5c202",
+      "lastModificationDate": 1654092822804,
+      "contentHash": "4da67224137c2e7f53c2d04373366983",
       "sourceName": "contracts/FirstToken.sol",
       "solcConfig": {
         "version": "0.8.4",
