@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/contracts/FirstToken.sol": {
-      "lastModificationDate": 1654164799717,
+      "lastModificationDate": 1654168047382,
       "contentHash": "70c49d421b83b07cf37116ac8d31dcd9",
       "sourceName": "contracts/FirstToken.sol",
       "solcConfig": {
@@ -443,6 +443,272 @@
       ],
       "artifacts": [
         "Pausable"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/contracts/SecondToken.sol": {
+      "lastModificationDate": 1654173991197,
+      "contentHash": "281342fd6b259406132b230cd30db606",
+      "sourceName": "contracts/SecondToken.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/access/AccessControl.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "SecondToken"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/access/AccessControl.sol": {
+      "lastModificationDate": 1654080852011,
+      "contentHash": "08101487003fda67e21e6d2cfe35bb2e",
+      "sourceName": "@openzeppelin/contracts/access/AccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IAccessControl.sol",
+        "../utils/Context.sol",
+        "../utils/Strings.sol",
+        "../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AccessControl"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/access/IAccessControl.sol": {
+      "lastModificationDate": 1654080857671,
+      "contentHash": "57c84298234411cea19c7c284d86be8b",
+      "sourceName": "@openzeppelin/contracts/access/IAccessControl.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IAccessControl"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1654080862639,
+      "contentHash": "9c54c6c065d9e590fdcdd72c451425b9",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1654080854063,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1654080859599,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
       ]
     }
   }

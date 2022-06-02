@@ -13,27 +13,25 @@ const deploy: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deploy } = deployments;
   const initialSupply: BigNumber = ethers.utils.parseUnits("5000", "ether");
 
-  const example = await deploy("FirstToken", {
+  const example = await deploy("SecondToken", {
     from: deployer,
     args: [initialSupply],
     log: true,
     waitConfirmations: 10,
   });
 
-  console.log("FirstToken deployed at: ", example.address);
+  console.log("SecondToken deployed at: ", example.address);
   
   await delay(10000);
 
   /*
   await run("verify:verify", {
     address: example.address,
-    contract: "contracts/FirstToken.sol:FirstToken",
+    contract: "contracts/SecondToken.sol:SecondToken",
     constructorArguments: [initialSupply]
   });
-*/  
-  
-  
+  */
 };
 
-deploy.tags = ["FirstToken"];
+deploy.tags = ["SecondToken"];
 export default deploy;
