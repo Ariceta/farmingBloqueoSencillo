@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/contracts/FirstToken.sol": {
-      "lastModificationDate": 1654092822804,
-      "contentHash": "4da67224137c2e7f53c2d04373366983",
+      "lastModificationDate": 1654164799717,
+      "contentHash": "70c49d421b83b07cf37116ac8d31dcd9",
       "sourceName": "contracts/FirstToken.sol",
       "solcConfig": {
         "version": "0.8.4",
@@ -37,8 +37,10 @@
       },
       "imports": [
         "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
         "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol"
       ],
       "versionPragmas": [
         "^0.8.4"
@@ -308,6 +310,139 @@
       ],
       "artifacts": [
         "IERC20Metadata"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol": {
+      "lastModificationDate": 1654080855027,
+      "contentHash": "da89e343119284763a5a135243cdb338",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Capped"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol": {
+      "lastModificationDate": 1654080855143,
+      "contentHash": "ab4babe7912604097ae769a62fa08506",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../ERC20.sol",
+        "../../../security/Pausable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20Pausable"
+      ]
+    },
+    "/home/mikel/Escritorio/NexxyoLabs/PrimerEjemplo/hardhat-base-project-ts/node_modules/@openzeppelin/contracts/security/Pausable.sol": {
+      "lastModificationDate": 1654080862247,
+      "contentHash": "9c2dccab8e3a43a18c41e358763fe4d8",
+      "sourceName": "@openzeppelin/contracts/security/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
       ]
     }
   }

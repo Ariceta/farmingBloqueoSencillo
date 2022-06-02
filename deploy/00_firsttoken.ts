@@ -11,7 +11,7 @@ const deploy: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deployments, getNamedAccounts } = hre;
   const { deployer } = await getNamedAccounts();
   const { deploy } = deployments;
-  const initialSupply: BigNumber = ethers.utils.parseUnits("1000", "ether");
+  const initialSupply: BigNumber = ethers.utils.parseUnits("12000", "ether");
 
   const example = await deploy("FirstToken", {
     from: deployer,
@@ -24,11 +24,13 @@ const deploy: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   
   await delay(10000);
 
+  /*
   await run("verify:verify", {
     address: example.address,
     contract: "contracts/FirstToken.sol:FirstToken",
     constructorArguments: [initialSupply]
   });
+  */
   
 };
 
