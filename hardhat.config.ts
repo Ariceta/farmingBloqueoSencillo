@@ -65,7 +65,7 @@ const config: HardhatUserConfig = {
     hardhat: {
       mining: {
         auto: true,
-        interval: [2500, 3000],
+        interval: [500, 1000],
         mempool: {
           order: "fifo",
         },

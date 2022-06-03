@@ -9,7 +9,9 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 
 contract FirstToken is Ownable, ERC20, ERC20Burnable, ERC20Capped, ERC20Pausable {
 
-    constructor(uint256 initialSupply) ERC20("Token", "TOK") ERC20Capped(10000*1e18) {
+    event Mensaje(string mensaje);
+
+    constructor(uint256 initialSupply) ERC20("Token", "TOK") ERC20Capped(10000000*1e18) {
         require(initialSupply < 10000*1e18, "Initial supply cannot be bigger than cap");
         ERC20._mint(msg.sender, initialSupply);
     }
@@ -23,6 +25,7 @@ contract FirstToken is Ownable, ERC20, ERC20Burnable, ERC20Capped, ERC20Pausable
     }
 
     function mint(address to, uint256 amount) public onlyOwner {
+        emit Mensaje("Estoy minteando el token 1");
         _mint(to, amount);
     }
 

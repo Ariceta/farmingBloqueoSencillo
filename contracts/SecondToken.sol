@@ -11,6 +11,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 
 contract SecondToken is AccessControl, ERC20, ERC20Burnable, ERC20Capped, ERC20Pausable {
 
+    event Mensaje(string mensaje);
+
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant BURNER_ROLE = keccak256("BURNER_ROLE");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
@@ -30,10 +32,11 @@ contract SecondToken is AccessControl, ERC20, ERC20Burnable, ERC20Capped, ERC20P
     }
 
     function mint(address to, uint256 amount) public onlyRole(MINTER_ROLE) {
+        emit Mensaje("Estoy minteando el token 2");
         _mint(to, amount);
     }
 
-    function _mint(address account, uint256 amount)internal override(ERC20, ERC20Capped) onlyRole(DEFAULT_ADMIN_ROLE) {
+    function _mint(address account, uint256 amount)internal override(ERC20, ERC20Capped) {
         super._mint(account, amount);
     } 
 
