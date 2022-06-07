@@ -11,18 +11,17 @@ const deploy: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   const { deployments, getNamedAccounts } = hre;
   const { deployer } = await getNamedAccounts();
   const { deploy } = deployments;
-  const initialSupply: BigNumber = ethers.utils.parseUnits("5000", "ether");
 
   const example = await deploy("SecondToken", {
     from: deployer,
-    args: [initialSupply],
+    args: [],
     log: true,
     waitConfirmations: 10,
   });
 
   console.log("SecondToken deployed at: ", example.address);
   
-  await delay(10000);
+  await delay(5000);
 
   /*
   await run("verify:verify", {
